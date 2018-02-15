@@ -1,0 +1,17 @@
+/* Normalize */
+
+/* Variables */
+@import "_variables";
+
+/* Layout */
+@import "../partials/layout/style";
+@import "../partials/layout/includes/header/style";
+@import "../partials/layout/includes/footer/style";
+
+/* Pages */
+@import "../pages/index/style";
+
+/* Partials */
+@import "../partials/button/style";
+@import "../partials/task/style";
+@import "../partials/task/includes/code/style";

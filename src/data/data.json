@@ -1,0 +1,102 @@
+{
+  "taskList": [
+    {
+      "id": 0,
+      "title": "Задание 1",
+      "description": "Создайте копию объекта, указанного ниже, и проверьте, что изменение нового объекта не приводит к изменению старого. Используйте оператор расширения или Object.assign().",
+      "code": {
+        "obj1": {
+          "firstName": "Vasya",
+          "lastName": "Ivanov",
+          "gender": "male",
+          "relatives": [
+            {
+              "firstName": "Tanya",
+              "lastName": "Ivanova"
+            },
+            {
+              "firstName": "Lena",
+              "lastName": "Ivanova"
+            },
+            {
+              "firstName": "Roma",
+              "lastName": "Ivanov"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 1,
+      "title": "Задание 2",
+      "description": "Объедините объекты, указанные ниже, в один новый. Убедитесь, что изменение нового объекта не приводит к изменению старых. Используйте оператор расширения или Object.assign().",
+      "code": {
+        "obj1": {
+          "a": 1,
+          "b": 2,
+          "c": 3
+        },
+        "obj2": {
+          "b": 7,
+          "c": 8,
+          "d": 9
+        }
+      }
+    },
+    {
+      "id": 2,
+      "title": "Задание 3",
+      "description": "В каждый объект массива relatives добавьте поле gender. Используйте синтаксис стрелочных функций.",
+      "code": {
+        "obj1": {
+          "firstName": "Vasya",
+          "lastName": "Ivanov",
+          "gender": "male",
+          "relatives": [
+            {
+              "firstName": "Tanya",
+              "lastName": "Ivanova"
+            },
+            {
+              "firstName": "Lena",
+              "lastName": "Ivanova"
+            },
+            {
+              "firstName": "Roma",
+              "lastName": "Ivanov"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 3,
+      "title": "Задание 4",
+      "description": "Выведите приветствие для каждой родственницы Васи Иванова. Используйте шаблонные строки, не используйте if-ы.",
+      "code": {
+        "obj1": {
+          "firstName": "Vasya",
+          "lastName": "Ivanov",
+          "gender": "male",
+          "relatives": [
+            {
+              "firstName": "Tanya",
+              "lastName": "Ivanova",
+              "gender": "female"
+            },
+            {
+              "firstName": "Lena",
+              "lastName": "Ivanova",
+              "gender": "female"
+            },
+            {
+              "firstName": "Roma",
+              "lastName": "Ivanov",
+              "gender": "male"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

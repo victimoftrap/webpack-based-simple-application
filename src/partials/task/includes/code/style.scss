@@ -1,0 +1,18 @@
+.task {
+  &__code {
+    display: block;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: $color-lightest-grey;
+    white-space: normal;
+
+    &_answer {
+      background-color: $color-lightest-yellow;
+    }
+
+    &-line {
+      display: block;
+      white-space: pre;
+    }
+  }
+}
