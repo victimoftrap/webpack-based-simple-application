@@ -80,6 +80,9 @@ class OperationExecutor {
    * @returns string which contains the class of button and current color
    */
   fifthTaskExecute(arg) {
+    /**
+     * Place your code here
+     */
     return '';
   }
 }
