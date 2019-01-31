@@ -10,6 +10,7 @@ class OperationExecutor {
       4: this.fifthTaskExecute.bind(this),
       5: this.sixthTaskExecute.bind(this),
       6: this.seventhTaskExecute.bind(this),
+      7: this.eighthTaskExecute.bind(this),
     };
   }
 
@@ -108,6 +109,19 @@ class OperationExecutor {
    * @returns obj that contains swap pairs ('value: key')
    */
   seventhTaskExecute(arg) {
+    /**
+     * Place your code here
+     */
+    return null;
+  }
+
+  /**
+   * Eighth task of homework
+   * @param arg – object which contains two array
+   * arg = { obj1: { ... } }
+   * @returns obj that built using arrays' values
+   */
+  eighthTaskExecute(arg) {
     /**
      * Place your code here
      */
