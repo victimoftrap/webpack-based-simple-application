@@ -6,7 +6,8 @@ class OperationExecutor {
       0: this.firstTaskExecute.bind(this),
       1: this.secondTaskExecute.bind(this),
       2: this.thirdTaskExecute.bind(this),
-      3: this.fourthTaskExecute.bind(this)
+      3: this.fourthTaskExecute.bind(this),
+      4: this.fifthTaskExecute.bind(this),
     };
   }
 
@@ -70,6 +71,19 @@ class OperationExecutor {
      * Place your code here
      */
     return null /* variable with result */;
+  }
+
+  /**
+   * Fifth task of homework
+   * @param arg – object which contains new color of the button and the class of it
+   * arg = { color: 'yellow', className: 'button_2' }
+   * @returns string which contains the class of button and current color
+   */
+  fifthTaskExecute(arg) {
+    /**
+     * Place your code here
+     */
+    return '';
   }
 }
 
