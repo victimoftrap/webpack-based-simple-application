@@ -106,6 +106,14 @@
         "color": "red",
         "class": "button_4"
       }
+    },
+    {
+      "id": 5,
+      "title": "Задание 6",
+      "description": "Выведите объект, оставив в массиве только те хосты, которые совпадают с вашим",
+      "code": {
+        "hostNames": ["localhost", "yandex.ru", "google.com", "localhost", "localhost", "ru.wikipedia.org", "vk.com", "localhost"]
+      }
     }
   ]
 }

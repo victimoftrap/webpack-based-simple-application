@@ -8,6 +8,7 @@ class OperationExecutor {
       2: this.thirdTaskExecute.bind(this),
       3: this.fourthTaskExecute.bind(this),
       4: this.fifthTaskExecute.bind(this),
+      5: this.sixthTaskExecute.bind(this),
     };
   }
 
@@ -84,6 +85,19 @@ class OperationExecutor {
      * Place your code here
      */
     return '';
+  }
+
+  /**
+   * Sixth task of homework
+   * @param arg – object with values that you should handle
+   * arg = { obj1: { ... } }
+   * @returns object that contains items that match the hostname on which the application is running
+   */
+  sixthTaskExecute(arg) {
+    /**
+     * Place your code here
+     */
+    return null;
   }
 }
 
