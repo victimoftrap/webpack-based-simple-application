@@ -9,6 +9,7 @@ class OperationExecutor {
       3: this.fourthTaskExecute.bind(this),
       4: this.fifthTaskExecute.bind(this),
       5: this.sixthTaskExecute.bind(this),
+      6: this.seventhTaskExecute.bind(this),
     };
   }
 
@@ -94,6 +95,19 @@ class OperationExecutor {
    * @returns object that contains items that match the hostname on which the application is running
    */
   sixthTaskExecute(arg) {
+    /**
+     * Place your code here
+     */
+    return null;
+  }
+
+  /**
+   * Seventh task of homework
+   * @param arg – object which contains simple key-value pairs
+   * arg = { obj1: { key: value } }
+   * @returns obj that contains swap pairs ('value: key')
+   */
+  seventhTaskExecute(arg) {
     /**
      * Place your code here
      */

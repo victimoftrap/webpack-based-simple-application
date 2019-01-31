@@ -114,6 +114,17 @@
       "code": {
         "hostNames": ["localhost", "yandex.ru", "google.com", "localhost", "localhost", "ru.wikipedia.org", "vk.com", "localhost"]
       }
+    },
+    {
+      "id": 6,
+      "title": "Задание 7",
+      "description": "Выведите объект, в котором ключи и значения из исходного объекта поменяны местами",
+      "code": {
+        "key1": "value1",
+        "key2": "value2",
+        "key3": "value3",
+        "key4": "value4"
+      }
     }
   ]
 }
