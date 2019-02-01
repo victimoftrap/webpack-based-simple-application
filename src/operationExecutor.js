@@ -12,6 +12,7 @@ class OperationExecutor {
       6: this.seventhTaskExecute.bind(this),
       7: this.eighthTaskExecute.bind(this),
       8: this.ninthTaskExecute.bind(this),
+      9: this.tenthTaskExecute.bind(this),
     };
   }
 
@@ -136,6 +137,19 @@ class OperationExecutor {
    * @returns obj that contains pairs id: obj with this id
    */
   ninthTaskExecute(arg) {
+    /**
+     * Place your code here
+     */
+    return null;
+  }
+
+  /**
+   * Tenth task of homework
+   * @param arg – object which contains class of item and empty array
+   * arg = { obj1: { ... } }
+   * @returns obj that contains the array with info about children of the node
+   */
+  tenthTaskExecute(arg) {
     /**
      * Place your code here
      */
