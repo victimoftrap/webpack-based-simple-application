@@ -139,11 +139,7 @@ class OperationExecutor {
     /**
      * Place your code here
      */
-    let result = {};
-    arg.users.forEach((item) => {
-      result[item.id] = item;
-    });
-    return result;
+    return null;
   }
 }
 
