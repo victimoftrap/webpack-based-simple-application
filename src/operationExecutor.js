@@ -11,6 +11,7 @@ class OperationExecutor {
       5: this.sixthTaskExecute.bind(this),
       6: this.seventhTaskExecute.bind(this),
       7: this.eighthTaskExecute.bind(this),
+      8: this.ninthTaskExecute.bind(this),
     };
   }
 
@@ -126,6 +127,23 @@ class OperationExecutor {
      * Place your code here
      */
     return null;
+  }
+
+  /**
+   * Ninth task of homework
+   * @param arg – object which contains array of users
+   * arg = { obj1: { users: [...] } }
+   * @returns obj that contains pairs id: obj with this id
+   */
+  ninthTaskExecute(arg) {
+    /**
+     * Place your code here
+     */
+    let result = {};
+    arg.users.forEach((item) => {
+      result[item.id] = item;
+    });
+    return result;
   }
 }
 

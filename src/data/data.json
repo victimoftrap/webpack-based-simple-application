@@ -134,6 +134,30 @@
         "arr1": ["key1", "value1", "key2", "value2", "key3"],
         "arr2": ["value3", "key4"]
       }
+    },
+    {
+      "id": 8,
+      "title": "Задание 9",
+      "description": "Сформируйте и выведите объект, ключи которого - id элементов массива, а значения - сами объекты",
+      "code": {
+        "users": [
+          {
+            "id": 0,
+            "firstName": "Tanya",
+            "lastName": "Ivanova"
+          },
+          {
+            "id": 1,
+            "firstName": "Lena",
+            "lastName": "Ivanova"
+          },
+          {
+            "id": 2,
+            "firstName": "Roma",
+            "lastName": "Ivanov"
+          }
+        ]
+      }
     }
   ]
 }
