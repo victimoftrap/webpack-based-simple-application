@@ -8,6 +8,9 @@ class OperationExecutor {
       2: this.thirdTaskExecute.bind(this),
       3: this.fourthTaskExecute.bind(this),
       4: this.fifthTaskExecute.bind(this),
+      5: this.sixthTaskExecute.bind(this),
+      6: this.seventhTaskExecute.bind(this),
+      7: this.eighthTaskExecute.bind(this),
     };
   }
 
@@ -84,6 +87,45 @@ class OperationExecutor {
      * Place your code here
      */
     return '';
+  }
+
+  /**
+   * Sixth task of homework
+   * @param arg – object with values that you should handle
+   * arg = { obj1: { ... } }
+   * @returns object that contains items that match the hostname on which the application is running
+   */
+  sixthTaskExecute(arg) {
+    /**
+     * Place your code here
+     */
+    return null;
+  }
+
+  /**
+   * Seventh task of homework
+   * @param arg – object which contains simple key-value pairs
+   * arg = { obj1: { key: value } }
+   * @returns obj that contains swap pairs ('value: key')
+   */
+  seventhTaskExecute(arg) {
+    /**
+     * Place your code here
+     */
+    return null;
+  }
+
+  /**
+   * Eighth task of homework
+   * @param arg – object which contains two array
+   * arg = { obj1: { ... } }
+   * @returns obj that built using arrays' values
+   */
+  eighthTaskExecute(arg) {
+    /**
+     * Place your code here
+     */
+    return null;
   }
 }
 
