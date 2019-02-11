@@ -4,7 +4,9 @@ const NODE_ENV = process.env.NODE_ENV || 'development';
 const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
+const devMode = process.env.NODE_ENV !== 'production';
 
 const SRC_DIR = __dirname + '/src';
 const BUILD_DIR = __dirname + '/build';
@@ -22,19 +24,15 @@ let plugins = [
   new webpack.ProvidePlugin({
     $: 'jquery',
     jQuery: 'jquery'
+  }),
+  new MiniCssExtractPlugin({
+    filename: devMode ? '[name].[hash].css' : '[name].[hash].css'
   })
 ];
 
-if (NODE_ENV === 'production') {
-  plugins = plugins.concat(
-    new ExtractTextPlugin({
-      filename: '[name].[hash].css',
-      disable: process.env.NODE_ENV === 'development'
-    })
-  );
-}
-
 module.exports = {
+  mode: 'none',
+
   entry: {
     app: path.join(SRC_DIR, '/index.js')
   },
@@ -86,26 +84,17 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: NODE_ENV === 'development' ?
-          [
-            {
-              loader: 'style-loader'
-            },
-            {
-              loader: 'css-loader'
-            },
-            {
-              loader: 'sass-loader'
-            }
-          ] :
-          ExtractTextPlugin.extract({
-            use: [{
-              loader: 'css-loader'
-            }, {
-              loader: 'sass-loader'
-            }],
-            fallback: 'style-loader'
-          })
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader
+          },
+          {
+            loader: 'css-loader'
+          },
+          {
+            loader: 'sass-loader'
+          }
+        ]
       }
     ]
   }
