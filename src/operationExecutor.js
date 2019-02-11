@@ -81,8 +81,8 @@ class OperationExecutor {
   /**
    * Fifth task of homework
    * @param arg – object which contains new color of the button and the class of it
-   * arg = { color: 'yellow', className: 'button_2' }
-   * @returns string which contains the class of button and current color
+   * arg = { color: '...', className: '...' }
+   * @returns string which contains the class of the button and current color
    */
   fifthTaskExecute(arg) {
     /**
@@ -95,7 +95,7 @@ class OperationExecutor {
    * Sixth task of homework
    * @param arg – object with values that you should handle
    * arg = { obj1: { ... } }
-   * @returns object that contains items that match the hostname on which the application is running
+   * @returns object that contains array of items that match the hostname on which the application is running
    */
   sixthTaskExecute(arg) {
     /**
@@ -121,7 +121,7 @@ class OperationExecutor {
    * Eighth task of homework
    * @param arg – object which contains two array
    * arg = { obj1: { ... } }
-   * @returns obj that built using arrays' values
+   * @returns obj that built using array's values
    */
   eighthTaskExecute(arg) {
     /**
