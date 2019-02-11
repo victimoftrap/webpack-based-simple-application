@@ -26,11 +26,17 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 const onButtonClick = (id, arg) => {
+  let result;
+  try {
+    result = operationExecutor.execute(id, arg);
+  } catch(e) {
+    result = e.message;
+  }
   const task = $(`.task_${id}`);
   task.children('.task__code_answer').remove();
   task.append(
     codeTemplate({
-      code: JSON.stringify(operationExecutor.execute(id, arg), undefined, 2).split('\n'),
+      code: JSON.stringify(result, undefined, 2).split('\n'),
       mode: 'answer'
     })
   );
