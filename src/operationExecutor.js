@@ -94,15 +94,12 @@ class OperationExecutor {
     /**
      * Sixth task of homework
      * @param arg – object with values that you should handle
-     * arg = { obj1: { ... } }
+     * arg = { hostNames: [ ... ] }
      * @returns object that contains array of items that match the hostname on which the application is running
      */
     sixthTaskExecute(arg) {
-        let url = location.href;
+        let url = location.hostname;
         let hostNames = [];
-
-        url = url.replace(/^https?:\/\//g, "")
-            .replace(/:\d+\//g, "");
 
         arg.hostNames.forEach(domain => {
             if (url === domain) {
@@ -115,20 +112,21 @@ class OperationExecutor {
     /**
      * Seventh task of homework
      * @param arg – object which contains simple key-value pairs
-     * arg = { obj1: { key: value } }
+     * arg = { key: value }
      * @returns obj that contains swap pairs ('value: key')
      */
     seventhTaskExecute(arg) {
-        /**
-         * Place your code here
-         */
-        return null;
+        let swapped = {};
+        for (let key in arg) {
+            swapped[arg[key]] = key;
+        }
+        return swapped;
     }
 
     /**
      * Eighth task of homework
      * @param arg – object which contains two array
-     * arg = { obj1: { ... } }
+     * arg = { arr1: [ ... ], arr2: [ ... ] }
      * @returns obj that built using array's values
      */
     eighthTaskExecute(arg) {
@@ -146,7 +144,7 @@ class OperationExecutor {
     /**
      * Ninth task of homework
      * @param arg – object which contains array of users
-     * arg = { obj1: { users: [...] } }
+     * arg = { users: [ ... ] }
      * @returns obj that contains pairs id: obj with this id
      */
     ninthTaskExecute(arg) {
@@ -160,14 +158,19 @@ class OperationExecutor {
     /**
      * Tenth task of homework
      * @param arg – object which contains class of item and empty array
-     * arg = { obj1: { ... } }
+     * arg = { className: '...', childrenInfo: [ ... ] }
      * @returns obj that contains the array with info about children of the node
      */
     tenthTaskExecute(arg) {
-        /**
-         * Place your code here
-         */
-        return null;
+        let children = document.getElementsByClassName(arg.className)[0].children;
+
+        for (let i = 0; i < children.length; i++) {
+            arg.childrenInfo.push({
+                tagName: children[i].tagName,
+                className: children[i].className
+            });
+        }
+        return arg;
     }
 }
 
